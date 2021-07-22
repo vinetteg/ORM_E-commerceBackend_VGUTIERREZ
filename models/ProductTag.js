@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 
-const sequelize = require("../config/connection");
+const sequelize = require("../../../../../../Desktop/homework/ORM_E-commerceBackend_VGUTIERREZ/config/connection");
 
 class ProductTag extends Model {}
 
@@ -14,11 +14,17 @@ ProductTag.init(
     },
     id: {
       type: DataTypes.INTEGER,
-      //  how to reference the prodict model's id
+      references: {
+        model: "product",
+        key: "id",
+      },
     },
     id: {
       type: DataTypes.INTEGER,
-      // how to reference the Tag model's id?
+      references: {
+        model: "product",
+        key: "id",
+      },
     },
   },
   {
