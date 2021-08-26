@@ -28,6 +28,8 @@ This is the first installation of this tool.
 
 ![Insomnia image with routes](images/insomnia.png)
 
+[![Demo video ]](https://www.youtube.com/watch?v=riI2cQuTTjE)
+
 # License
 
 <a name="license"></a>
